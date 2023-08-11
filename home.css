@@ -1,0 +1,147 @@
+html,body{
+    width:100%;
+    height: 100%;
+    margin: 0%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+   
+}
+
+.upperbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+    padding: 0 3vw;
+    border-bottom: 1px solid gray;
+    
+}
+.sideupper{
+    display: flex;
+    gap: 3.5vw;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.logo img{
+    height: 80px;
+}
+.option{
+    padding: 10px 15px;
+}
+.option:hover{
+    border-radius:10px;
+    background-color:rgb(43, 45, 44);
+    color:white;
+}
+i{
+    align-self: center;
+    display: none;
+}
+.content{
+    display: flex;
+    padding: 0 3vw;
+    height: calc(100vh - 80px);
+}
+.left{
+    width:50%;
+    
+}
+.left h1{
+    font-size:5.7vw;
+    margin-top: 14vh;
+    margin-bottom: 1vh;
+}
+.left span{
+    color: #004e90;
+}
+.left p{
+    font-size: 1.6vw;
+    margin-bottom: 4vh;
+    margin-top: 0vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.left button{
+    font-size: 1.5vw;
+    padding:1vw 1vw;
+    border: none;
+    border-radius: 7px;
+    background-color: #105e9e;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5vh;
+}
+button:hover{
+    background-color: #315a7c;
+}
+.right{
+    width: 50%;
+}
+.right img{
+    width:100%;
+    height: 100%;
+}
+
+
+
+/* media */
+@media (width<600px) {
+    .upperbar{
+        background-color:lightseagreen;
+        border-bottom:0px ;
+        height: 60px;
+    }
+    .option{
+        display: none;
+    }
+    i{
+        display: block;
+        font-size: 6.5vw;
+        color: white;
+    }
+    .logo img{
+        height:50px;
+    }
+    .content{
+        flex-direction: column;
+        height: calc(100vh - 60px);
+    }
+    .left{
+        width: 100%;
+        height: 55%;
+    }
+    .left h1{
+        font-size: 12vw;
+        margin-top:4vh;
+    }
+    .left p{
+        font-size: 3.5vw;
+        line-height:4.5vw;
+        width: 90%;
+    }
+    .left button{
+        font-size: 5vw;
+        padding:4vw 4.4vw;
+        border-radius:3px;
+    }
+    .right{
+        width: 100%;
+        height:40%;
+    }
+    .right img{
+        position: relative;
+        width: 100%;
+        z-index: -1;
+        margin:0;
+    }
+}
+
+@media (height<300px) {
+    footer{
+        position: fixed;
+        bottom: 1px;
+        right: 15px;
+    }
+}
