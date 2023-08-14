@@ -47,6 +47,19 @@ i{
 }
 .left{
     width:50%;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes load {
+
+    from{
+        margin-top: 20vh;
+    }
+    to{
+        margin-top: 0vh;
+    }
     
 }
 .left h1{
@@ -55,13 +68,13 @@ i{
     margin-bottom: 1vh;
 }
 .left span{
-    color: #004e90;
+    color:#004e90;
 }
 .left p{
     font-size: 1.6vw;
     margin-bottom: 4vh;
     margin-top: 0vh;
-    width:90%;
+    width: 90%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .left button{
@@ -108,6 +121,20 @@ button:hover{
     .content{
         flex-direction: column;
         height: calc(100vh - 60px);
+        animation-name: load;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+    @keyframes load {
+
+        from{
+            margin-top: 16vh;
+        }
+        to{
+            margin-top: 0vh;
+        }
+        
     }
     .left{
         width: 100%;
